@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+}
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow:  hidden;
+  overflow-y: scroll;
+  }
+img{
+  border-radius: 50%;
+  width: 10%;
+}
+::selection{
+  background-color: black;
+  color: #fff;
+}
