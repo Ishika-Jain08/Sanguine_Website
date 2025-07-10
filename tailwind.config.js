@@ -12,6 +12,10 @@ export default {
         "second-bg-color": "#faf9f7",
         "text-color": "#0f0f0f",
         "grape": "#604058",
+        "grow":"#017E84",
+      },
+      fontFamily: {
+        caveat: ['Caveat', 'cursive'],
       },
     },
   },
