@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import "remixicon/fonts/remixicon.css";
 const Hero = () => {
   return (
