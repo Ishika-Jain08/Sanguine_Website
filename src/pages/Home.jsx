@@ -5,9 +5,10 @@ import LocomotiveScroll from "locomotive-scroll";
 import AppGrid from "../components/AppGrid";
 import VideoSection from "../components/VedioSection";
 import StackedImagesSection from "../components/StackedImagesSection";
-import Img from "../components/Img";
+// import Img from "../components/Img";
 import CallToAction from "../components/CallToAction";
-import FeaturesSection from "../components/FeatureSection";
+// import FeaturesSection from "../components/FeatureSection";
+import CurevedSection from "../components/CurvedSection";
 // import Products from "./Products";
 // import Products from "./Products"
 
@@ -31,9 +32,10 @@ const Home = () => {
 <AppGrid/>
 <VideoSection/>
 <StackedImagesSection/>
-<Img/>
-<FeaturesSection/>
+{/* <Img/> */}
+{/* <FeaturesSection/> */}
 <CallToAction/>
+<CurevedSection/>
 <Footer/>
 {/* <Products/> */}
   </div>

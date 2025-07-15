@@ -5,26 +5,26 @@ const CallToAction = () => {
   return (
     <>
    
-    <div className="relative m-20 bg-[#f3f4f6] rounded-xl p-20 md:p-10 flex flex-col md:flex-row  items-center md:items-center gap-6">
+    {/* <div className="relative m-20 bg-[#f3f4f6] rounded-xl p-20 md:p-10 flex flex-col md:flex-row  items-center md:items-center gap-6"> */}
       {/* Quotation icon */}
-      <img
+      {/* <img
         src="https://odoocdn.com/openerp_website/static/src/img/snippets/s_wd_testimonials/quote.svg"
         alt=""
         className="absolute top-0 left-6 -translate-y-1/2 hidden md:block w-12"
-      />
+      /> */}
 
       {/* Left side: Testimonial text */}
-      <div className="md:w-2/3">
+      {/* <div className="md:w-2/3">
         <blockquote className="text-2xl font-normal text-gray-900 leading-relaxed">
           The processing time for accounting documents has been noticeably
           reduced, in certain cases even from 2 days to only 5 hours. As a
           result we can now focus on what matters: reporting and advising the
           client.
         </blockquote>
-      </div>
+      </div> */}
 
       {/* Right side: Author info */}
-      <div className="flex md:flex-col md:items-end gap-4 md:gap-3 md:w-1/3">
+      {/* <div className="flex md:flex-col md:items-end gap-4 md:gap-3 md:w-1/3">
         <img
           src="https://odoocdn.com/openerp_website/static/src/img/snippets/s_wd_testimonials/avatar/van_donink.webp"
           alt="Harry Van Donink"
@@ -34,13 +34,10 @@ const CallToAction = () => {
           <p className="font-bold text-gray-900">Harry Van Donink</p>
           <p className="text-sm text-gray-600">CEO KPMG Belgium</p>
         </div>
-        {/* <img
-          src=""
-          alt="KPMG Logo"
-          className="w-24 h-auto rounded border p-1 shadow-sm"
-        /> */}
-      </div>
-    </div>
+        
+      </div> */}
+      
+    {/* </div> */}
 
 <section className="overflow-hidden text-center pt-10 pb-7 bg-white relative">
       <div className="max-w-4xl mx-auto px-4">
