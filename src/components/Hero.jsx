@@ -1,45 +1,52 @@
 
 import "remixicon/fonts/remixicon.css";
-const Hero = () => {
-  return (
-    <>
-      <div>
-        <section className="flex flex-col items-center justify-center py-5 w-full ">
-          <div className="text-center p-5">
-            {/* <h6 className=" text-xs  text-gray-700 font-normal tracking-wider">
-              LET'S BUILD SOMETHING TOGETHER
-            </h6> */}
-            <h1 className="py-3">
-              <span className=" text-8xl text-grape font-caveat font-bold   text-center">Sanguine Software Solutions</span>
-            </h1>
-            <p className=" text-gray-700 font-caveat text-2xl font-semibold  ">
-              Sanguine Software Solutions The only company in India with a
-              Touch-based POS integrated <br />
-              ERP solution for the Hospitality Industry on an open source
-              platform.
-            </p>
-          </div>
-          <div className="flex gap-3 mt-4">
-            <a
-              href="/"
-              className=" bg-grape text-white shadow-md rounded p-4 transition-transform duration-300 hover:scale-105"
-            >
-              Get Free Trial
-            </a>
-            <a
-              href="/"
-              className="bg-bg-color text-grape shadow-md rounded p-4 transition-transform duration-300 hover:scale-105"
-            >
-              Watch Presentation
-            </a>
-          </div>
-        </section>
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
-       
+const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  return (
+    <section className="flex flex-col items-center justify-center px-4 md:px-10 py-16 bg-white w-full">
+      <div className="text-center max-w-5xl" data-aos="fade-up">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium  font-caveat leading-tight">
+          Sanguine Software Solutions
+        </h1>
+        <p
+          className="mt-6 text-lg sm:text-xl md:text-2xl text-gray-700 font-caveat font-semibold leading-relaxed"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          The only company in India with a Touch-based POS integrated <br />
+          ERP solution for the Hospitality Industry on an open-source platform.
+        </p>
       </div>
-      
-    </>
+
+      <div
+        className="flex flex-col sm:flex-row items-center gap-4 mt-10"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <Link
+          to="/"
+          className="bg-grape text-white px-6 py-3 text-lg md:text-xl rounded shadow-lg font-medium hover:scale-105 transition-transform font-sans"
+        >
+          Get Free Trial
+        </Link>
+        <Link
+          to="/"
+          className="bg-gray-100 text-grape px-6 py-3 text-xl md:text-xl rounded shadow-lg font-medium hover:scale-105 transition-transform font-sans"
+        >
+          Watch Presentation
+        </Link>
+      </div>
+    </section>
   );
 };
 
 export default Hero;
+
